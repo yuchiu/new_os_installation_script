@@ -8,7 +8,7 @@ sudo apt-get -y install
 
 ###############################
 #                             #
-#        GUI SOFTWARES        #
+#          SOFTWARES          #
 #                             #
 # #############################
 
@@ -21,6 +21,9 @@ sudo apt-get install ubuntu-make
 
 # vlc media player
 sudo apt-get -y install vlc
+
+# aria2
+sudo apt-get -y install aria2
 
 # chrome
 
