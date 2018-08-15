@@ -15,6 +15,9 @@ sudo apt-get -y install
 # hp printer tool
 sudo apt-get -y install hplip
 
+#curl
+sudo apt-get -y install curl
+
 # vscode 
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 sudo apt-get install ubuntu-make
@@ -38,10 +41,8 @@ sudo apt-get -y install aria2
 sudo apt-get -y install git 
 
 # nodejs
-sudo apt -y install nodejs 
-
-# npm
-sudo apt -y install npm 
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 #create-react-app
 sudo npm i -g create-react-app
@@ -73,15 +74,15 @@ sudo apt-get install postgresql postgresql-contrib
 # mongodb (not finished)
 sudo apt install -y mongodb
 
-# redis (not finished, details link https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04)
-sudo apt-get install build-essential tcl
-cd /tmp
-curl -O http://download.redis.io/redis-stable.tar.gz
-tar xzvf redis-stable.tar.gz
-cd redis-stable
-make
-make test
-sudo make install
-sudo mkdir /etc/redis
-sudo cp /tmp/redis-stable/redis.conf /etc/redis
-sudo nano /etc/redis/redis.conf
+# # redis (not finished, details link https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04)
+# sudo apt-get install build-essential tcl
+# cd /tmp
+# curl -O http://download.redis.io/redis-stable.tar.gz
+# tar xzvf redis-stable.tar.gz
+# cd redis-stable
+# make
+# make test
+# sudo make install
+# sudo mkdir /etc/redis
+# sudo cp /tmp/redis-stable/redis.conf /etc/redis
+# sudo nano /etc/redis/redis.conf
