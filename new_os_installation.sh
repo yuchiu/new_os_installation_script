@@ -69,9 +69,21 @@ sudo apt-get -y install nginx
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
+# rabbitmq
+sudo apt-get -y install erlang
+sudo apt-get -y install rabbitmq-server
+sudo systemctl enable rabbitmq-server
+sudo systemctl start rabbitmq-server
+sudo rabbitmq-plugins enable rabbitmq_management # default port: http://[ip_address]:15672/
+sudo rabbitmqctl add_user admin admin
+sudo rabbitmqctl set_user_tags admin administrator
+sudo rabitmqctl set_permissions -p / admin ".*" ".*" ".*"
+
+
 # tools & setting 
 sudo apt-get install gcc g++ autoconf libpcre3 libpcre3-dev make automake
 sudo apt-get install wget apache2-utils
+
 # mysql
 echo "mysql-server mysql-server/root_password password root" | sudo debconf-set-selections
 echo "mysql-server mysql-server/root_password_again password root" | sudo debconf-set-selections
