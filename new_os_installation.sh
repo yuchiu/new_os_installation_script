@@ -13,6 +13,9 @@ sudo apt-get -y install
 # #############################
 
 
+#tmux
+sudo apt-get -y install tmux
+
 #curl
 sudo apt-get -y install curl
 
@@ -95,7 +98,7 @@ sudo systemctl enable mysql
 sudo apt-get install postgresql postgresql-contrib
 
 # mongodb (not finish yet)
-sudo apt install -y mongodb
+sudo apt-get install -y mongodb
 
 # # redis (not finished, details link https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04)
 # sudo apt-get install build-essential tcl
