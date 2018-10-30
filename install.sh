@@ -52,6 +52,7 @@ sudo apt-get install chrome-gnome-shell -y
 # install Dash to Panel by jderose9 https://extensions.gnome.org/extension/1160/dash-to-panel/
 # install Arc Menu by LinxGem33 https://extensions.gnome.org/extension/1228/arc-menu/
 # install OpenWeather by jens https://extensions.gnome.org/extension/750/openweather/
+# install Workspace Grid by zakkak https://extensions.gnome.org/extension/484/workspace-grid/
 
 # hp printer tool
 # https://websiteforstudents.com/installing-hp-printer-drivers-on-ubuntu-16-04-17-10-18-04-desktop/
