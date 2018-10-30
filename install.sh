@@ -5,6 +5,15 @@
 sudo apt-get -y update && sudo apt-get -y upgrade
 sudo apt-get -y install
 
+###############################
+#                             #
+#          SETTINGS           #
+#                             #
+# #############################
+
+# minimize on dock icon click
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+
 
 ###############################
 #                             #
@@ -12,11 +21,10 @@ sudo apt-get -y install
 #                             #
 # #############################
 
-
-#tmux
+# tmux
 sudo apt-get -y install tmux
 
-#curl
+# curl
 sudo apt-get -y install curl
 
 # vlc media player
@@ -24,6 +32,26 @@ sudo apt-get -y install vlc
 
 # aria2
 sudo apt-get -y install aria2
+
+# gnome tweak tool
+sudo add-apt-repository universe
+sudo apt-get install gnome-tweak-tool -y
+
+# synaptic package manager
+sudo apt-get install synaptic -y
+
+# gnome shell extensions 
+sudo apt-get install gnome-shell-extensions -y
+
+# gnome shell extensions 
+sudo apt-get install gnome-shell-extensions -y
+
+# chrome gnome shell
+sudo apt-get install chrome-gnome-shell -y
+# go to extensions.gnome.org
+# install Dash to Panel by jderose9 https://extensions.gnome.org/extension/1160/dash-to-panel/
+# install Arc Menu by LinxGem33 https://extensions.gnome.org/extension/1228/arc-menu/
+# install OpenWeather by jens https://extensions.gnome.org/extension/750/openweather/
 
 # hp printer tool
 # https://websiteforstudents.com/installing-hp-printer-drivers-on-ubuntu-16-04-17-10-18-04-desktop/
@@ -36,7 +64,7 @@ sudo apt-get -y install aria2
 
 ###############################
 #                             #
-#      PROGRAMMING TOOLS      #
+#    PROGRAMMING SOFTWARES    #
 #                             #
 # #############################
 
@@ -52,11 +80,6 @@ sudo npm i -g cross-env eslint tslint
 
 #install npm packages globally
 sudo npm i -g create-react-app
-
-# install java8
-sudo apt-add-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
 
 # python3
 sudo apt-get install python3.6
@@ -82,10 +105,9 @@ sudo rabbitmqctl add_user admin admin
 sudo rabbitmqctl set_user_tags admin administrator
 sudo rabitmqctl set_permissions -p / admin ".*" ".*" ".*"
 
-
 # tools & setting 
-sudo apt-get install gcc g++ autoconf libpcre3 libpcre3-dev make automake
-sudo apt-get install wget apache2-utils
+sudo apt-get install gcc g++ autoconf libpcre3 libpcre3-dev make automake -y
+sudo apt-get install wget apache2-utils -y
 
 # mysql
 echo "mysql-server mysql-server/root_password password root" | sudo debconf-set-selections
@@ -95,7 +117,7 @@ sudo systemctl start mysql
 sudo systemctl enable mysql
 
 # postgres (not finish yet, need to setup default password afterward)
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib -y
 
 # mongodb (not finish yet)
 sudo apt-get install -y mongodb
@@ -112,3 +134,8 @@ sudo apt-get install -y mongodb
 # sudo mkdir /etc/redis
 # sudo cp /tmp/redis-stable/redis.conf /etc/redis
 # sudo nano /etc/redis/redis.conf
+
+# install java8
+# sudo apt-add-repository ppa:webupd8team/java
+# sudo apt-get update -y
+# sudo apt-get install oracle-java8-installer -y
