@@ -43,8 +43,8 @@ sudo apt-get install synaptic -y
 # gnome shell extensions 
 sudo apt-get install gnome-shell-extensions -y
 
-# gnome shell extensions 
-sudo apt-get install gnome-shell-extensions -y
+# dconf editor 
+sudo apt-get install dconf-editor -y
 
 # chrome gnome shell
 sudo apt-get install chrome-gnome-shell -y
