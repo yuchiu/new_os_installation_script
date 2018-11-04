@@ -24,6 +24,13 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 # tmux
 sudo apt-get -y install tmux
 
+# virtualbox
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian `lsb_release -cs` contrib"
+sudo apt-get update -y
+sudo apt-get install virtualbox-5.2 -y
+
 # curl
 sudo apt-get -y install curl
 
