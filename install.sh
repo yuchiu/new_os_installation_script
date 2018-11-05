@@ -24,13 +24,6 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 # tmux
 sudo apt-get -y install tmux
 
-# virtualbox
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian `lsb_release -cs` contrib"
-sudo apt-get update -y
-sudo apt-get install virtualbox-5.2 -y
-
 # curl
 sudo apt-get -y install curl
 
@@ -60,6 +53,13 @@ sudo apt-get install chrome-gnome-shell -y
 # install Arc Menu by LinxGem33 https://extensions.gnome.org/extension/1228/arc-menu/
 # install OpenWeather by jens https://extensions.gnome.org/extension/750/openweather/
 # install Workspace Grid by zakkak https://extensions.gnome.org/extension/484/workspace-grid/
+
+# virtualbox
+# wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+# wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+# sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian `lsb_release -cs` contrib"
+# sudo apt-get update -y
+# sudo apt-get install virtualbox-5.2 -y
 
 # hp printer tool
 # https://websiteforstudents.com/installing-hp-printer-drivers-on-ubuntu-16-04-17-10-18-04-desktop/
